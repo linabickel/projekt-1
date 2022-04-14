@@ -1,11 +1,4 @@
-@media screen and (max-width:641px) {
-    .bodywrapper {width: 100%;}
-    p{ width: 80%;
-        font-size: 16pt;}
-    
-    .cta-inner{
-    flex-direction: column;}
-}
+
 
 html{
     font-family: 'IBM Plex Sans', sans-serif;
@@ -31,6 +24,7 @@ header{
     display: block;
     overflow: hidden;
     padding-bottom: 24px;
+    margin-top: 5%;
 
 }
 article, aside, footer, nav, section{
@@ -47,9 +41,13 @@ article, aside, footer, nav, section{
     .hero{
         width: 100%;
         padding-top: 64px;
+        display: flex;
+        justify-content: space-between;
     }
 
         .hero-text{
+            display: flex;
+            flex-direction: column;
             float: left;
             width: 45%;
         }
@@ -66,9 +64,11 @@ article, aside, footer, nav, section{
             float: left;
             width: 45%;
             
+            
         }
         .hero-cta{
-            height: autodis;
+          display: flex;
+          flex-direction:row;
         }
 
         .primary-btn{
@@ -113,7 +113,6 @@ article, aside, footer, nav, section{
                 padding: 30px;
                 border: white;
                 width: 25%;
-                min-width: 250px;
                 margin:auto;
             }
 
@@ -190,9 +189,8 @@ article, aside, footer, nav, section{
                 background-color: #2C3039;
                 padding: 12px;
                 margin: 0 auto;
-                width: 30%;
+                width: 340px;
                 position: relative;
-                min-width: 250px;
             }
             
             .pricing-table-inner{
@@ -280,7 +278,8 @@ article, aside, footer, nav, section{
                 }
 
                 .primary-btn.cta-button{
-                    margin:auto ;
+                    margin:auto;
+                    margin-right: 2%;
                    justify-content: right;
              
                 }
@@ -334,3 +333,94 @@ footer{
           width: 50%;
           text-align: right;
         }
+
+
+        @media screen and (max-width:641px) {
+            .body-wrapper {width: 100%;}
+            p{ width: 80%;
+                font-size: 16pt;}
+
+                header{
+                    margin-left: 5%;
+                }
+
+                .hero{
+                    flex-direction: column;
+                }
+                .hero-background{
+                    width: 100%;
+                }
+                .hero-text{
+                    width: 100%;}
+
+                 h1{
+                     width: 90%;
+                     margin: auto;
+                     margin-bottom: 2%;
+                     font-size: 32px;
+                     text-align: center;
+              
+                 }
+                 .hero-p{
+                     width: 90%;
+                     margin: auto;
+                     margin-bottom: 5%;
+                     text-align: center;
+                 }
+                .hero-cta{
+                    flex-direction: column;
+                    width: 50%;
+                    margin: auto;
+                    
+                }
+                .primary-btn{
+                    margin: 0 0 5% 0 ;
+                }
+            .features-inner{
+                width: 60%;
+            }
+        
+            .pricing-table{
+                width: 60%;
+            }
+            .cta{ margin:10% 5%}
+
+                .cta-inner{
+                flex-direction: column;}
+
+                .primary-btn.cta-button{
+                    margin:auto;
+                    margin-bottom: 5%;
+                }
+            .site-footer-inner{
+                flex-direction: column;
+                
+                margin: 0 5%;
+            }
+                .brand-footer-brand{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                 }
+                .footer-links{ 
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    margin-bottom: 24px;
+                 }
+                
+                .footer-social-links{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                }
+        
+                .footer-copyright{ 
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    margin: 0 auto;
+                    margin-bottom: 24px;
+                }
+
+              
