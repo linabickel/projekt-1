@@ -334,6 +334,9 @@ footer{
           text-align: right;
         }
 
+        @media screen and (max-width: 1200px) and (min-width: 641px){
+            body{ margin: 5% ;}
+        }
 
         @media screen and (max-width:641px) {
             .body-wrapper {width: 100%;}
